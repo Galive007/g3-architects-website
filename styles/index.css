@@ -22,8 +22,22 @@
     border: 0;
     margin-bottom: 35px;
 }
+.section-tittle{
+    font-size: 2.8rem;
+    color: #131313;
+    text-align: center;
+    font-weight: 700;
+}
+.common-details{
+    color: #727272;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 30px 0 20px;
+}
 /* section common padding */
-.team-container{
+.section-container{
     padding: 85px 0 120px;
 }
 
@@ -37,10 +51,7 @@ nav{
     justify-content: space-between;
 }
 .nav-tittle{
-    color: #131313;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: 700;
+    
 }
 nav> ul{
     display: flex;
@@ -76,14 +87,7 @@ nav li a{
 .break{
 
 }
-.text-details{
-    color: #727272;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 30px 0 20px;
-}
+
 .banner img{
     width: 100%;
 }
@@ -96,17 +100,41 @@ main{
 .team-container{
     display: flex;
     align-items: center;
-    gap: 70px;
+
+}
+.team-details{
+    padding-left: 70px;
 }
 .team-img{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
     gap: 1rem;
 }
+.tittle-style1{
+    color: #727272;
+    font-weight: 500;
+}
+.tittle-style2{
+    color: #131313;
+    font-weight: 700;
+}
+.tittle-style3{
+    color: #FF900E;
+    font-weight: 700;
+}
+
 
 
 /* Responsive styles */
 @media screen and (max-width:576px) {
+    /* common change */
+    .section-container {
+        padding: 50px 0 75px;
+    }
+    .common-details {
+        margin: 10px 0 15px;
+    }
+    /*  */
     header {
         padding: 45px 35px;
     }
@@ -114,7 +142,7 @@ main{
         flex-direction: column;
         align-items: center;
     }
-    .nav-tittle {
+    .section-tittle{
         font-size: 2.3em;
     }
     nav li {
@@ -131,13 +159,35 @@ main{
     .btn-primary {
         padding: 13px 17px;
     }
+    /* team section */
+    .team-container {
+        flex-direction: column-reverse;
+    }
+    .team-img {
+        grid-template-columns: 1fr;
+        gap: .8rem;
+    }
+
+    .team-details {
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 @media screen and (min-width:576.1px) and (max-width:992px) {
+    /* common change */
+    .section-container {
+        padding: 65px 0 90px;
+    }
+    .common-details {
+        margin: 18px 0 25px;
+    }
+    /*  */
     header {
         padding: 45px 35px;
     }
-    .nav-tittle {
-        font-size: 1.8em;
+    .section-tittle{
+        font-size: 2.3em;
     }
     nav li {
         margin-right: 30px;
@@ -148,4 +198,12 @@ main{
     .banner-tittle {
         font-size: 4em;
     } 
+    /* team section */
+    .team-container {
+        flex-direction: column-reverse;
+    }
+    .team-details {
+        text-align: center;
+        padding: 0 118px;
+    }
 }
