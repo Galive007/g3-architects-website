@@ -124,12 +124,14 @@ main{
 
 /* feature section */
 .features{
+    margin: 0 auto;
+    max-width: 1600px;
     padding-top: 0;
     display: flex;
-    gap: 100px;
+    gap: 70px;
 }
 .feature-container .feature-card{
-    width: 586px;
+    width: 500px;
     height: 171px;
     padding: 30px;
     margin-bottom: 20px;
@@ -147,6 +149,11 @@ main{
     font-size: 1.2rem;
     font-weight: 600;
 }
+.feature-img img{
+    width: 708px;
+    height: 982px;
+    /* margin-left: 20px; */
+} 
 .ten-years-badge{
     text-align: center;
     align-content: center;
@@ -155,6 +162,9 @@ main{
     border-radius: 8px;
     background: #FF900E;
     padding: 40px 0px;
+    position: relative;
+    bottom: 100px;
+    right: 60px;
 }
 .ten-years-badge h2{
     color: #FFF;
@@ -162,19 +172,18 @@ main{
     font-size: 4em;
     font-weight: 700;
     line-height: 70px;
+
 }
 .ten-years-badge p{
     color: #FFF;
     font-family: "Work Sans";
-    font-size: 25px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
 }
 
-/* .feature-img img{
-    width: 100%;
-} */
+
 
 /* fact section */
 .fact{
