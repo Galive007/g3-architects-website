@@ -150,8 +150,7 @@ main{
     font-weight: 600;
 }
 .feature-img img{
-    width: 708px;
-    height: 982px;
+    height: 90%;
     /* margin-left: 20px; */
 } 
 .ten-years-badge{
@@ -263,7 +262,7 @@ footer{
     .common-details {
         margin: 10px 0 15px;
     }
-    /*  */
+    /* header section */
     header {
         padding: 45px 35px;
     }
@@ -303,7 +302,24 @@ footer{
         padding-right: 25px;
     }
 
-    /*  */
+    /* feature section */
+    .features{
+        flex-direction: column;
+    }
+    .feature-container .feature-card {
+        width: auto;
+    }
+    .feature-container p{
+        padding: 25px;
+    }
+    .feature-img img {
+        width: 100%;
+    }
+    .ten-years-badge {
+        width: 300px;
+        bottom: 85px;
+        right: 0px;
+    }
 
     /* fact section */
     
@@ -370,7 +386,24 @@ footer{
         padding: 0 118px;
     }
 
-
+    /* feature section */
+    .features{
+        flex-direction: column;
+    }
+    .feature-container .feature-card {
+        width: 80%;
+    }
+    .feature-container p{
+        padding: 25px;
+    }
+    .feature-img img {
+        width: 90%;
+    }
+    .ten-years-badge {
+        width: 300px;
+        bottom: 85px;
+        right: 0px;
+    }
     /* fact section */
     
     .fact {
