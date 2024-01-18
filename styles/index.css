@@ -122,7 +122,59 @@ main{
     font-weight: 700;
 }
 
-/*  */
+/* feature section */
+.features{
+    padding-top: 0;
+    display: flex;
+    gap: 100px;
+}
+.feature-container .feature-card{
+    width: 586px;
+    height: 171px;
+    padding: 30px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-container h3{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.feature-card .feature-tittle{
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ten-years-badge{
+    text-align: center;
+    align-content: center;
+    width: 342px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 40px 0px;
+}
+.ten-years-badge h2{
+    color: #FFF;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 70px;
+}
+.ten-years-badge p{
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* .feature-img img{
+    width: 100%;
+} */
 
 /* fact section */
 .fact{
@@ -159,6 +211,9 @@ main{
     flex-shrink: 0;
 }
 /* sponsor section styles */
+.sponsor{
+    padding-top: 0;
+}
 .sponsor-content{
     max-width: 750px;
     margin: 0 auto;
